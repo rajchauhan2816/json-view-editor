@@ -30,7 +30,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "postbuild": "purgecss --css dist/*.css --content dist/*.js --output dist"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -47,6 +48,7 @@
     "trailingComma": "es5"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@size-limit/preset-small-lib": "^11.0.0",
     "@types/lodash-es": "^4.17.12",
     "@types/react": "^18.2.39",
