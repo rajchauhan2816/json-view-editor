@@ -1,5 +1,18 @@
 {
+  "name": "json-view-editor",
   "version": "0.1.0",
+  "author": "Raj Kumar Chauhan",
+  "module": "dist/json-view-editor.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/json-view-editor.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/json-view-editor.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -33,19 +46,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "json-view-editor",
-  "author": "Raj Kumar Chauhan",
-  "module": "dist/json-view-editor.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/json-view-editor.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/json-view-editor.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.0.0",
     "@types/lodash-es": "^4.17.12",
