@@ -2,7 +2,6 @@ import React from 'react';
 import { Page } from './Page';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import './index.scss';
 
 type Props = {
