@@ -1,0 +1,162 @@
+[
+  {
+    "key": "primary_product_type",
+    "type": "DROPDOWN",
+    "values": ["Whole Round", "Fillet Skin on", "Fillet Skin off ", "GG"],
+    "mandatory": true,
+    "visibility": true,
+    "display_label": "Product Type",
+    "description_label": " Product Type"
+  },
+  {
+    "key": "primary_spec",
+    "type": "DROPDOWN",
+    "values": [
+      "500 gm/Down",
+      "500 gm/Up",
+      "1 Kg/Up",
+      "2 Kg/Up",
+      "200 gm +",
+      "2 Kg +",
+      "5 Kg +"
+    ],
+    "mandatory": true,
+    "visibility": true,
+    "display_label": "Spec",
+    "description_label": " Spec"
+  },
+  {
+    "key": "additional_description",
+    "type": "TEXTAREA",
+    "values": "",
+    "mandatory": false,
+    "visibility": true,
+    "display_label": "Additional Description",
+    "description_label": ""
+  },
+  {
+    "key": "uom",
+    "type": "DROPDOWN",
+    "values": ["KG", "POUND"],
+    "mandatory": true,
+    "visibility": "true",
+    "display_label": "Unit Of Measurement",
+    "description_label": " Unit Of Measurement"
+  },
+  {
+    "key": "quantity",
+    "type": "NUMBER",
+    "values": "",
+    "mandatory": true,
+    "visibility": true,
+    "display_label": "Quantity",
+    "description_label": ""
+  },
+  {
+    "key": "rate",
+    "type": "NUMBER",
+    "values": "",
+    "mandatory": true,
+    "visibility": true,
+    "display_label": "Rate (per unit)",
+    "description_label": ""
+  },
+  {
+    "key": "invoice_display_name",
+    "type": "INPUT",
+    "values": "",
+    "mandatory": true,
+    "visibility": "true",
+    "display_label": "Invoice Display Name",
+    "description_label": "Invoice Display Name"
+  },
+  {
+    "key": "treatment",
+    "type": "MULTISELECT",
+    "values": [],
+    "mandatory": false,
+    "visibility": "true",
+    "display_label": "Treatment",
+    "description_label": ""
+  },
+  {
+    "key": "total_amount",
+    "type": "INPUT",
+    "values": "",
+    "disabled": true,
+    "mandatory": false,
+    "visibility": true,
+    "display_label": "Total Amount",
+    "description_label": ""
+  },
+  {
+    "key": "freezing_type",
+    "type": "DROPDOWN",
+    "values": ["Chilled"],
+    "mandatory": true,
+    "visibility": true,
+    "display_label": "Freezing Type",
+    "description_label": " Freezing Type"
+  },
+  {
+    "key": "packaging_style",
+    "type": "DROPDOWN",
+    "values": [
+      "Vacuum Packed Loins",
+      "Vacuum Packed Chunks",
+      "Non-Vacuum Packed-Cloth wrapped Chunks",
+      "Vacuum Packed-Cloth wrapped Loins"
+    ],
+    "children": [
+      {
+        "key": "coolant",
+        "type": "DROPDOWN",
+        "values": ["Packet Ice", "Gel Ice", "Dry Ice"],
+        "mandatory": true,
+        "visibility": "['Vacuum Packed Loins','Vacuum Packed Chunks','Non-Vacuum Packed-Cloth wrapped Chunks','Vacuum Packed-Cloth wrapped Loins'].includes(localStorage.getItem(\"packaging_style\"))",
+        "display_label": "Coolant",
+        "description_label": "Coolant"
+      },
+      {
+        "key": "packing_type",
+        "type": "DROPDOWN",
+        "values": ["Thermocol box", "Corrugated box "],
+        "mandatory": true,
+        "visibility": "['Vacuum Packed Loins','Vacuum Packed Chunks','Non-Vacuum Packed-Cloth wrapped Chunks','Vacuum Packed-Cloth wrapped Loins'].includes(localStorage.getItem(\"packaging_style\"))",
+        "display_label": "Packing Type",
+        "description_label": "Packing Type"
+      },
+      {
+        "key": "quantity_per_box",
+        "type": "DROPDOWN",
+        "values": [
+          "2kg",
+          "5kg",
+          "10kg",
+          "15kg",
+          "25kg",
+          "30kg",
+          "50kg",
+          "100kg"
+        ],
+        "mandatory": true,
+        "visibility": "['Vacuum Packed Loins','Vacuum Packed Chunks','Non-Vacuum Packed-Cloth wrapped Chunks','Vacuum Packed-Cloth wrapped Loins'].includes(localStorage.getItem(\"packaging_style\"))",
+        "display_label": "Quantity per Box",
+        "description_label": "Quantity/Box"
+      },
+      {
+        "key": "box_count",
+        "type": "NUMBER",
+        "values": "",
+        "mandatory": true,
+        "visibility": "['Vacuum Packed Loins','Vacuum Packed Chunks','Non-Vacuum Packed-Cloth wrapped Chunks','Vacuum Packed-Cloth wrapped Loins'].includes(localStorage.getItem(\"packaging_style\"))",
+        "display_label": "Number of Boxes",
+        "description_label": " Number of Boxes"
+      }
+    ],
+    "mandatory": true,
+    "visibility": true,
+    "display_label": "Packaging Style",
+    "description_label": "Packaging Style"
+  }
+]
