@@ -2,6 +2,7 @@ import React from 'react';
 import { Page } from './Page';
 import { Provider } from 'react-redux';
 import { store } from './store';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './index.scss';
 
 type Props = {
@@ -12,8 +13,9 @@ type Props = {
 export const JsonViewEditor: React.FC<Props> = ({ value, setValue }) => {
   return (
     <Provider store={store}>
-      <div className="testing"></div>
-      <Page value={value} setValue={setValue} />
+      <div className="json-view-editor">
+        <Page value={value} setValue={setValue} />
+      </div>
     </Provider>
   );
 };

@@ -1,6 +1,6 @@
 {
   "name": "json-view-editor",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Raj Kumar Chauhan",
   "module": "dist/json-view-editor.esm.js",
   "size-limit": [
