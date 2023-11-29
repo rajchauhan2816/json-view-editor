@@ -1,6 +1,6 @@
 {
   "name": "json-view-editor",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Raj Kumar Chauhan",
   "module": "dist/json-view-editor.esm.js",
   "size-limit": [
@@ -28,7 +28,7 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "npm run build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "postbuild": "purgecss --css dist/*.css --content dist/*.js --output dist"
