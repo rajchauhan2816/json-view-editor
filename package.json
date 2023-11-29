@@ -35,14 +35,14 @@
   },
   "name": "json-view-editor",
   "author": "Raj Kumar Chauhan",
-  "module": "dist/raj-json-visual-editor.esm.js",
+  "module": "dist/json-view-editor.esm.js",
   "size-limit": [
     {
-      "path": "dist/raj-json-visual-editor.cjs.production.min.js",
+      "path": "dist/json-view-editor.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/raj-json-visual-editor.esm.js",
+      "path": "dist/json-view-editor.esm.js",
       "limit": "10 KB"
     }
   ],
