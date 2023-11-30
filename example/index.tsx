@@ -5,14 +5,12 @@ import { JsonViewEditor } from '../.';
 import '../dist/json-view-editor.cjs.development.css';
 
 const sampleData = {
-  key: 'primary_product_type',
-  type: 'DROPDOWN',
+  key: 'product_type',
   values: ['Whole Round', 'Fillet Skin on', 'Fillet Skin off ', 'GG'],
-  mandatory: true,
-  visibility: true,
   display_label: 'Product Type',
   description_label: ' Product Type',
 };
+
 const App = () => {
   const [value, setValue] = React.useState(sampleData);
 

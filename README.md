@@ -1,3 +1,28 @@
+# Usage
+
+```
+import { JsonViewEditor } from "json-view-editor"
+import "json-view-editor/dist/json-view-editor.cjs.production.min.css"
+
+const sampleData = {
+  key: 'product_type',
+  values: ['Whole Round', 'Fillet Skin on', 'Fillet Skin off ', 'GG'],
+  display_label: 'Product Type',
+  description_label: ' Product Type',
+};
+
+const [value, setValue] = React.useState(sampleData)
+
+<JsonViewEditor value={value} setValue={setValue} />
+
+```
+
+## Sample Images
+
+![JSON Editor](image.png)
+
+## Library is built using TSDX
+
 # TSDX React User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
