@@ -31,7 +31,7 @@ export const cast = (type: DataType, value: any): any => {
     case DataType.String:
       switch (type) {
         case DataType.Number:
-          return parseInt(value) || 0;
+          return Number(value) || 0;
         case DataType.Boolean:
           return value.length > 0;
         case DataType.Null:
